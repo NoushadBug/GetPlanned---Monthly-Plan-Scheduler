@@ -1,0 +1,38 @@
+*{
+  font-family: 'Nunito', "Bahnschrift","Lato", sans-serif;
+  
+}
+
+body {
+  background-image: radial-gradient( circle farthest-corner at 7.4% 45.1%,  rgba(236,206,251,1) 0%, rgba(205,237,246,1) 45.1%, rgba(227,251,252,1) 78.4%, rgba(230,247,235,1) 90% );
+}
+
+div:first-child {
+  margin: 20px 0;
+}
+div:first-child table:first-of-type {
+  margin: 15px 2px;
+  background: #ffffff;
+}
+div:first-child table:last-of-type {
+  margin: 15px 2px;
+  background: #fdfdef;
+}
+div:first-child .head {
+  text-align: center;
+  margin: 45px 35px;
+}
+div:first-child .img-container {
+  text-align: center;
+}
+
+#head
+{
+  text-align: center;
+
+} 
+
+.modal
+{
+  max-height: 100%;
+}

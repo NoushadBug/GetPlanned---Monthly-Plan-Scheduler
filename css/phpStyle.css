@@ -1,0 +1,49 @@
+*{
+    overflow: hidden;
+    font-family: 'Nunito', "Bahnschrift","Lato", sans-serif;
+    display: block;
+    text-transform: uppercase;
+    width: 3em;
+    text-align: center;
+
+
+}
+
+body
+{
+    background-image: linear-gradient( 168deg,  rgba(156,177,248,1) 7.5%, rgba(153,247,243,1) 93.1% );
+    height: 100vh;
+    width: 100vw;
+    margin-top:40vh ;
+    animation: gradientBG 5s ease infinite;
+    -webkit-animation: gradientBG 5s ease infinite;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+text
+{
+    padding: none;
+} 
+
+a{
+    text-decoration: none;
+    color: white;
+    border-style: none;
+    border-width: 2px;
+    padding: 7px;
+    border-radius: 12px;
+    background-color: steelblue;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+}

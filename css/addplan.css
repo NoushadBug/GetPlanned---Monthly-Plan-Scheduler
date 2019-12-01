@@ -1,0 +1,295 @@
+body{
+    font-family: 'Nunito',"Bahnschrift","Lato", sans-serif;
+    transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+    background: url('../img/addplanbg.svg');
+    background-repeat: no-repeat;
+    background-size: 100vw 120vh;
+
+    
+
+}
+
+a{
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+button{
+  display: block;
+  cursor: pointer;
+}
+form {
+  
+    padding-left: 20px;
+    margin: 0px;
+    max-width: 600px;
+    
+  }
+  form h1 {
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-weight: 100;
+    text-align: center;
+    color: #7eb22a;
+    border-bottom: 1px solid #ccc;
+  }
+  form .row {
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+  }
+  form input[type="text"], form input[type="password"], form textarea {
+    width: 100%;
+    height: 40px;
+    padding: 10px 10px 10px 90px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    color: #333;
+    border-radius: 3px;
+    transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  }
+  form textarea {
+    height: auto;
+    min-height: 200px;
+    padding: 50px 10px 10px 10px;
+  }
+  form input[type="text"] + label, form input[type="password"] + label, form textarea + label {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 80px;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: white;
+    background: #7eb22a;
+    border-radius: 3px 0 0 3px;
+    transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+    transform: translateZ(0) translateX(0);
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    -ms-border-radius: 3px 0 0 3px;
+    -o-border-radius: 3px 0 0 3px;
+}
+  form textarea + label {
+    width: 100%;
+    border-radius: 3px 3px 0 0;
+  }
+  form input[type="text"]:focus, form input[type="password"]:focus {
+    padding-left: 10px;
+  }
+  form textarea:focus {
+    padding-top: 10px;
+  }
+  form input[type="text"]:focus + label, form input[type="password"]:focus + label {
+    transform: translateZ(0) translateX(-100%);
+  }
+  form textarea:focus + label {
+    transform: translateZ(0) translateY(-100%);
+  }
+  form input[type="checkbox"], form input[type="radio"] {
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    display:inline-block;
+    clip: rect(0 2 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 10px;
+    border-style: solid;
+    
+  }
+  /* radbutton */
+
+  .container ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+  }
+  
+  ul li{
+    color: #AAAAAA;
+    display: inline;
+    position: relative;
+    float: right;
+    width: 25%;
+    height: 100px;
+  }
+  
+  ul li input[type=radio]{
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  ul li label{
+    display: block;
+    position: relative;
+    padding: 10px 15px 15px 62px;
+    margin:  auto;
+    height: 10px;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+  }
+  
+  ul li:hover label{
+    color: #87CEEB;
+  }
+  
+  ul li .check{
+    display: block;
+    position: absolute;
+    border: 5px solid #AAAAAA;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    top: 0px;
+    left: 0px;
+    z-index: 6;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+  }
+  
+  ul li:hover .check {
+    border: 5px solid #87CEEB;
+  }
+  
+  ul li .check::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    top: 5px;
+    left: 5px;
+    margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+  
+  input[type=radio]:checked ~ .check {
+    border: 5px solid #7eb22a;
+  }
+  
+  input[type=radio]:checked ~ .check::before{
+    background: #7eb22a;
+  }
+  
+  input[type=radio]:checked ~ label{
+    color: #7eb22a;
+  }
+  
+
+  form input[type="checkbox"] + label {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: #ccc;
+    width: 60px;
+    height: 30px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  }
+  form input[type="checkbox"] + label:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #7eb22a;
+    border-radius: 100px;
+    transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9) 0.1s;
+    transform: translateZ(0) scale(0);
+  }
+  form input[type="checkbox"] + label:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    display: block;
+    height: 26px;
+    width: 26px;
+    background: white;
+    border-radius: 100%;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+    transform: translateZ(0) translateX(0);
+    -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+    -moz-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+    -ms-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+    -o-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+}
+  form input[type="checkbox"]:checked + label {
+    background: #7eb22a;
+  }
+  form input[type="checkbox"]:checked + label:after {
+    left: calc(100% - 28px);
+    transform: translateZ(0);
+  }
+  form button {
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: white;
+    border: none;
+    background: #13b629;
+    border-radius: 3px;
+    transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+    transform: translateZ(0) translateX(0);
+    z-index: 2;
+  }
+  form button:before {
+    content: '';
+    display: ;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgb(61, 151, 61);
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+    transform: translateZ(0) scale(0);
+    z-index: -1;
+    -webkit-transform: translateZ(0) scale(0);
+    -moz-transform: translateZ(0) scale(0);
+    -ms-transform: translateZ(0) scale(0);
+    -o-transform: translateZ(0) scale(0);
+}
+  form button:hover:before, form button:focus:before {
+    transform: scale(1);
+    transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+    -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+    -moz-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+    -ms-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+    -o-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+}
+
