@@ -9,7 +9,7 @@ shows the calender which is fully customed and made with javascript. Select any 
 * [Second Page: Add a Plan](screenshots/page2.png)
 if you select add plan in first page it will redirect here with the selected date you choosed to add a plan. The selected date, month and year is sending to the second page by using "localStorage". All the data will be stored with PHP in mySql Database 
 * [Third Page: View Plans(update/delete)](screenshots/page3.png)
-here you can see the selected date's plans redirected from phpmyadmin database. you can update or delete a plan in real time and it doesn't nedd to be refresh the page after everytime you update.
+here you can see the selected date's plans redirected from phpmyadmin database. you can update or delete a plan in real time and it doesn't need to be refresh the page after everytime you update.
 
 
 ## How to use?
