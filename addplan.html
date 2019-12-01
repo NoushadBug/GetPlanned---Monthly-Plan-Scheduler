@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/addplan.css">
+    <link rel="icon" href="./img/vector_827_11-512.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,800&display=swap" rel="stylesheet">
+    <title>GetPlanned - Add a Plan</title>
+</head>
+
+
+<body>
+ 
+<form action="./insert.php" method="POST" id="addplanForm" enctype="multipart/form-data">
+
+    <h1 id = "head">something</h1>
+    <div class="row" >
+
+      <input type="checkbox" name="holiday" id="holiday" value="1">Holiday
+      <label for="holiday"></label> 
+
+    </div>
+
+    Set Event Priority:
+    <div class="container">
+        <ul>
+          <li>
+            <input type="radio" id="f-option" name="selector"  value="1" required> 
+            <label for="f-option">High</label>
+            <div class="check"><div class="inside"></div></div>            
+          </li>
+          
+          <li>
+            <input type="radio" id="s-option" name="selector"  value="2" required>
+            <label for="s-option">Medium</label>
+            <div class="check"><div class="inside"></div></div>            
+          </li>
+          <li>
+            <input type="radio" id="t-option" name="selector"  value="3" required>
+            <label for="t-option">Low</label>
+            <div class="check"><div class="inside"></div></div>            
+          </li>
+        </ul>
+    </div>
+    
+    <div class="row">
+      <input type="text" name="name" id="name" required>
+      <label for="name">Name</label>
+    </div> 
+
+
+    
+    <div class="row">
+      <textarea name="description" id="description" required></textarea>
+      <label for="description">Description</label>
+    </div>
+    
+    <input type="hidden"  name="extra" id="hiddenvalue" value="" >
+    <button type="submit" onclick = "sendDateInfo()" tabindex="0" formaction="./insert.php" class="bubbly-button">Submit</button>
+
+  </form>
+  
+    <script src="./js/main.js"></script>
+    <script src="./js/addplan.js"></script>
+
+</body>
+</html>
